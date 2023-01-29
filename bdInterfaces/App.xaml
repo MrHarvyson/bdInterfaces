@@ -1,0 +1,8 @@
+﻿<Application x:Class="bdInterfaces.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="View/LoginView.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="RESOURCES/Recursos.xaml"/>
+    </Application.Resources>
+</Application>

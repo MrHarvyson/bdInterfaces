@@ -1,0 +1,140 @@
+﻿<Window x:Class="bdInterfaces.View.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        Title="LoginView" Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="LoginView_OnMouseDown"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <!-- creacion de ventana #333333 #22B573-->
+    <Border CornerRadius="20"
+            Background= "{StaticResource Negro}" >
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="25" />
+                    <ColumnDefinition Width="25" />
+                    <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                           Foreground="White"
+                           Padding="20 0 0 0"
+                           VerticalAlignment="Center"
+                           FontWeight="Bold" />
+
+                <Button Grid.Column="1"
+                        x:Name="BtnMinimizar"
+                        Content="-"
+                        Foreground="White"
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Click="BtnMinimizar_OnClick"
+                        Style="{StaticResource BotColorVerde}"
+                        Template="{StaticResource BotRedondo}" />
+
+                <Button Grid.Column="2"
+                        x:Name="BtnCerrar"
+                        Content="X"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="BtnCerrar_OnClick"
+                        Style="{StaticResource BotColorVerde}"
+                        Template="{StaticResource BotRedondo}" />
+
+            </Grid>
+
+            <StackPanel Grid.Row="1"
+                        Margin="0 30 0 0"
+                        HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Bottom">
+                    <TextBlock Text="NORTHWIND"
+                               FontFamily="Montserrat"
+                               FontSize="70"
+                               FontWeight="Bold"
+                               Foreground="{StaticResource Verde}" />
+                    <Image Source="../Imagenes/bd.png"
+                           Width="50"
+                           VerticalAlignment="Bottom"
+                           Margin="20 0 0 20" />
+                </StackPanel>
+
+                <TextBlock Text="Usuario"
+                           Foreground="{StaticResource Verde}"
+                           FontFamily="Montserrat"
+                           FontWeight="Bold"
+                           FontSize="13"
+                           Margin="0 50 0 0 "
+                           Width="200" />
+
+                <TextBox x:Name="TxtUser"
+                         Background="Transparent"
+                         Foreground="White"
+                         BorderThickness="0 0 0 1"
+                         Width="200"
+                         FontSize="13"
+                         Margin="0 10 0 0"
+                         FontFamily="Montserrat"
+                         CaretBrush="{StaticResource Verde}" />
+
+                <TextBlock Text="Contraseña"
+                           Foreground="{StaticResource Verde}"
+                           FontFamily="Montserrat"
+                           FontWeight="Bold"
+                           FontSize="13"
+                           Margin="0 25 0 0 "
+                           Width="200" />
+
+                <PasswordBox x:Name="TxtPass"
+                             Background="Transparent"
+                             Foreground="White"
+                             BorderThickness="0 0 0 1"
+                             Width="200"
+                             FontSize="13"
+                             Margin="0 10 0 0"
+                             FontFamily="Montserrat"
+                             CaretBrush="{StaticResource Verde}" />
+
+                <Button x:Name="BtnLogin"
+                        Content="Entrar"
+                        Foreground="{StaticResource Negro}"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        FontWeight="Bold"
+                        Margin="0 50 0 0"
+                        Click="BtnLogin_OnClick"
+                        Style="{StaticResource BotColorVerde}"
+                        Template="{StaticResource BotSemiRedondo}" />
+
+
+                <TextBlock Text="Version 1.0"
+                           Foreground="{StaticResource Verde}"
+                           FontFamily="Montserrat"
+                           VerticalAlignment="Center"
+                           TextAlignment="Center"
+                           FontSize="10"
+                           Margin="0 40 0 0 "
+                           Width="200" />
+                
+                
+            </StackPanel>
+
+        </Grid>
+
+    </Border>
+</Window>
