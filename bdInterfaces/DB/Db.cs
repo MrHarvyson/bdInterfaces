@@ -80,6 +80,15 @@ public class Db
         conexion.Open();
         cmd.ExecuteNonQuery();
     }
+
+    public static void modificar(String productoNuevo, String productoAntiguo, String categoriaName)
+    {
+        string consulta = "UPDATE products SET ProductName = '" + productoNuevo + "', CategoryID = '" + obtenerCategoria(categoriaName) + "' WHERE ProductName = '" + productoAntiguo + "'";
+        MySqlCommand cmd = new MySqlCommand(consulta, conexion);
+        conexion.Open();
+        cmd.ExecuteNonQuery();
+    }
+    
     
     
     

@@ -84,12 +84,15 @@ public partial class Crud : Page
     private void BtnAgregarPro_OnClick(object sender, RoutedEventArgs e)
     {
         Db.insertar(TxtProducto.Text,CbCategoriaAgregar.SelectedValue.ToString());
+        Db.cerrarConexion();
         mostrarLista();
     }
 
 
     private void BtnModificar_OnClick(object sender, RoutedEventArgs e)
     {
+        Db.modificar(TxtProductoNuevo.Text,TxtProductoAntiguo.Text,CbCategoriaModificar.SelectedValue.ToString());
+        Db.cerrarConexion();
         mostrarLista();
     }
 

@@ -7,8 +7,27 @@
 
       xmlns:local="clr-namespace:bdInterfaces.Pages"
       mc:Ignorable="d"
+      Background="{StaticResource Negro}"
       Title="Consultas" Height="450" Width="600">
-    <StackPanel>
-        
+    <StackPanel Orientation="Horizontal"
+                HorizontalAlignment="Center">
+        <ListBox x:Name="lista1"
+                 Width="275"
+                 Height="250"
+                 Background="Transparent"
+                 Foreground="LightGray"
+                 FontFamily="Montserrat"
+                 BorderThickness="1"
+                 BorderBrush="{StaticResource Verde}">
+        </ListBox>
+        <ListBox x:Name="lista2"
+                 Width="275"
+                 Height="250"
+                 Background="Transparent"
+                 Foreground="LightGray"
+                 FontFamily="Montserrat"
+                 BorderThickness="1"
+                 BorderBrush="{StaticResource Verde}">
+        </ListBox>
     </StackPanel>
 </Page>
