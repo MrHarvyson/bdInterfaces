@@ -10,7 +10,9 @@
       Background="{StaticResource Negro}"
       Title="Consultas" Height="450" Width="600">
     <StackPanel Orientation="Horizontal"
-                HorizontalAlignment="Center">
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,50,0,0">
         
         <StackPanel Margin="10"
                     VerticalAlignment="Center">
