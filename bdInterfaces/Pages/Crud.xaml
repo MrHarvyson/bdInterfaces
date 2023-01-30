@@ -11,7 +11,7 @@
       Background="{StaticResource Negro}">
     <Grid>
 
-        <Grid Margin="0,10,50,10">
+        <Grid Margin="0,10,0,10">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="150" />
@@ -305,6 +305,7 @@
                                 </StackPanel>
 
                             </Grid>
+                            
                         </Grid>
 
 
@@ -315,22 +316,47 @@
 
             </Grid>
 
-            <StackPanel Grid.Row="1">
-
-                <ListBox x:Name="list"
-                         Width="500"
-                         Height="175"
-                         Margin="50,40,0,0"
-                         Background="Transparent"
-                         Foreground="LightGray"
-                         FontFamily="Montserrat"
-                         BorderThickness="1"
-                         BorderBrush="{StaticResource Verde}">
-
-
-                </ListBox>
-
-
+            <StackPanel Grid.Row="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Center"
+                               Margin="0,20,0,0"
+                               Foreground="LightGray"
+                               FontFamily="Montserrat"
+                               FontWeight="Bold">PRODUCTOS</TextBlock>
+                    <ListBox x:Name="list1"
+                             Width="250"
+                             Height="175"
+                             Margin="0,10,0,0"
+                             Background="Transparent"
+                             Foreground="LightGray"
+                             FontFamily="Montserrat"
+                             BorderThickness="1"
+                             ScrollViewer.ScrollChanged="lbx1_ScrollChanged"
+                             BorderBrush="{StaticResource Verde}">
+                    </ListBox>
+                </StackPanel>
+                
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Center"
+                               Margin="0,20,0,0"
+                               Foreground="LightGray"
+                               FontFamily="Montserrat"
+                               FontWeight="Bold">CATEGORÍAS</TextBlock>
+                    <ListBox x:Name="list2"
+                             Width="250"
+                             Height="175"
+                             Margin="0,10,0,0"
+                             Background="Transparent"
+                             Foreground="LightGray"
+                             FontFamily="Montserrat"
+                             BorderThickness="1"
+                             ScrollViewer.ScrollChanged="lbx2_ScrollChanged"
+                             BorderBrush="{StaticResource Verde}">
+                    </ListBox>
+                </StackPanel>
+                
             </StackPanel>
 
         </Grid>

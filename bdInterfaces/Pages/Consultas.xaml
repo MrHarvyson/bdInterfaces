@@ -11,23 +11,52 @@
       Title="Consultas" Height="450" Width="600">
     <StackPanel Orientation="Horizontal"
                 HorizontalAlignment="Center">
-        <ListBox x:Name="lista1"
-                 Width="275"
-                 Height="250"
-                 Background="Transparent"
-                 Foreground="LightGray"
-                 FontFamily="Montserrat"
-                 BorderThickness="1"
-                 BorderBrush="{StaticResource Verde}">
-        </ListBox>
-        <ListBox x:Name="lista2"
-                 Width="275"
-                 Height="250"
-                 Background="Transparent"
-                 Foreground="LightGray"
-                 FontFamily="Montserrat"
-                 BorderThickness="1"
-                 BorderBrush="{StaticResource Verde}">
-        </ListBox>
+        
+        <StackPanel Margin="10"
+                    VerticalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center"
+                       Margin="0,0,0,20"
+                       Foreground="LightGray"
+                       FontFamily="Montserrat"
+                       FontWeight="Bold">MÁS VENDIDOS</TextBlock>
+            <ListBox x:Name="lista1"
+                     Background="Transparent"
+                     Foreground="LightGray"
+                     FontFamily="Montserrat"
+                     BorderThickness="1"
+                     BorderBrush="{StaticResource Verde}">
+            </ListBox>
+        </StackPanel>
+        <StackPanel Margin="10"
+                    VerticalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center"
+                       Margin="0,0,0,20"
+                       Foreground="LightGray"
+                       FontFamily="Montserrat"
+                       FontWeight="Bold">SIN STOCK</TextBlock>
+            <ListBox x:Name="lista2"
+                     Background="Transparent"
+                     Foreground="LightGray"
+                     FontFamily="Montserrat"
+                     BorderThickness="1"
+                     BorderBrush="{StaticResource Verde}">
+            </ListBox>
+        </StackPanel>
+        <StackPanel Margin="10"
+                    VerticalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center"
+                       Margin="0,0,0,20"
+                       Foreground="LightGray"
+                       FontFamily="Montserrat"
+                       FontWeight="Bold">MÁS CAROS</TextBlock>
+            <ListBox x:Name="lista3"
+                     Background="Transparent"
+                     Foreground="LightGray"
+                     FontFamily="Montserrat"
+                     BorderThickness="1"
+                     BorderBrush="{StaticResource Verde}">
+            </ListBox>
+        </StackPanel>
+        
     </StackPanel>
 </Page>
