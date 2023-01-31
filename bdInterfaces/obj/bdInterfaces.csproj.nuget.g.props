@@ -12,17 +12,4 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\josec\.nuget\packages\" />
   </ItemGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)lottiesharp\2.1.0\contentFiles\any\net6.0-windows7.0\lottie_sharp.ico" Condition="Exists('$(NuGetPackageRoot)lottiesharp\2.1.0\contentFiles\any\net6.0-windows7.0\lottie_sharp.ico')">
-      <NuGetPackageId>LottieSharp</NuGetPackageId>
-      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
-      <NuGetItemType>Content</NuGetItemType>
-      <Pack>false</Pack>
-      <Private>False</Private>
-      <Link>lottie_sharp.ico</Link>
-    </Content>
-  </ItemGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_Xaml_Behaviors_Wpf Condition=" '$(PkgMicrosoft_Xaml_Behaviors_Wpf)' == '' ">C:\Users\josec\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.39</PkgMicrosoft_Xaml_Behaviors_Wpf>
-  </PropertyGroup>
 </Project>

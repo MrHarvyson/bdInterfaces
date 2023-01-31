@@ -9,7 +9,6 @@
       "bdInterfaces/1.0.0": {
         "dependencies": {
           "FontAwesome.Sharp": "6.2.1",
-          "LottieSharp": "2.1.0",
           "MySql.Data": "8.0.32"
         },
         "runtime": {
@@ -66,32 +65,11 @@
           }
         }
       },
-      "LottieSharp/2.1.0": {
-        "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
-          "SkiaSharp.Skottie": "2.88.1",
-          "SkiaSharp.Views.WPF": "2.88.1"
-        },
-        "runtime": {
-          "lib/net6.0-windows7.0/LottieSharp.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
-          }
-        }
-      },
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
-        }
-      },
-      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
-        "runtime": {
-          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.39.4716"
-          }
         }
       },
       "MySql.Data/8.0.32": {
@@ -137,85 +115,6 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
             "assemblyVersion": "1.9.0.0",
             "fileVersion": "1.9.0.1"
-          }
-        }
-      },
-      "SkiaSharp/2.88.1": {
-        "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.1",
-          "SkiaSharp.NativeAssets.macOS": "2.88.1"
-        },
-        "runtime": {
-          "lib/net6.0/SkiaSharp.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.1.0"
-          }
-        }
-      },
-      "SkiaSharp.NativeAssets.macOS/2.88.1": {
-        "runtimeTargets": {
-          "runtimes/osx/native/libSkiaSharp.dylib": {
-            "rid": "osx",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "SkiaSharp.NativeAssets.Win32/2.88.1": {
-        "runtimeTargets": {
-          "runtimes/win-arm64/native/libSkiaSharp.dll": {
-            "rid": "win-arm64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x64/native/libSkiaSharp.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x86/native/libSkiaSharp.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "SkiaSharp.Skottie/2.88.1": {
-        "dependencies": {
-          "SkiaSharp": "2.88.1"
-        },
-        "runtime": {
-          "lib/net6.0/SkiaSharp.SceneGraph.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.1.0"
-          },
-          "lib/net6.0/SkiaSharp.Skottie.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.1.0"
-          }
-        }
-      },
-      "SkiaSharp.Views.Desktop.Common/2.88.1": {
-        "dependencies": {
-          "SkiaSharp": "2.88.1",
-          "System.Drawing.Common": "4.7.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.1.0"
-          }
-        }
-      },
-      "SkiaSharp.Views.WPF/2.88.1": {
-        "dependencies": {
-          "SkiaSharp": "2.88.1",
-          "SkiaSharp.Views.Desktop.Common": "2.88.1"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SkiaSharp.Views.WPF.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.1.0"
           }
         }
       },
@@ -352,13 +251,6 @@
       "path": "k4os.hash.xxhash/1.0.6",
       "hashPath": "k4os.hash.xxhash.1.0.6.nupkg.sha512"
     },
-    "LottieSharp/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-qfz3KbSy6XSsYTwCCOFVKTDBOjS+AcY0nqB1jazwB5nq93+I+5ZIMqvtTId+CBQs+zEarT7XwA+iQIhVPrxZbQ==",
-      "path": "lottiesharp/2.1.0",
-      "hashPath": "lottiesharp.2.1.0.nupkg.sha512"
-    },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
       "serviceable": true,
@@ -380,13 +272,6 @@
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
-    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
-      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
-      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
-    },
     "MySql.Data/8.0.32": {
       "type": "package",
       "serviceable": true,
@@ -400,48 +285,6 @@
       "sha512": "sha512-eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
       "path": "portable.bouncycastle/1.9.0",
       "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
-    },
-    "SkiaSharp/2.88.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bEgYq0n0kVb/t/3DgQTILBqlXcNjKmz0t8ur9w41UK+pbufBGcEF8QMJQIhdRYohHqhsBwrCF87WUBkeRAuquA==",
-      "path": "skiasharp/2.88.1",
-      "hashPath": "skiasharp.2.88.1.nupkg.sha512"
-    },
-    "SkiaSharp.NativeAssets.macOS/2.88.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pJETwmhPe7L3w9x5eBHjmFucj5WiI4cYhG+v04IzZs0gcdC7aTeIh6D+vE3hjxaRBr6eDEr/U/JEPSm7YEfxPg==",
-      "path": "skiasharp.nativeassets.macos/2.88.1",
-      "hashPath": "skiasharp.nativeassets.macos.2.88.1.nupkg.sha512"
-    },
-    "SkiaSharp.NativeAssets.Win32/2.88.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rea9/AzPq3n5tQJ9ffQJqhrhl1EkO9XtnPjEDu+6ovsLJoSIj4khvPiqNvxo/j97bo1/qQP6VsWjk06U0TUtYg==",
-      "path": "skiasharp.nativeassets.win32/2.88.1",
-      "hashPath": "skiasharp.nativeassets.win32.2.88.1.nupkg.sha512"
-    },
-    "SkiaSharp.Skottie/2.88.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PTyPA8q+LInMiZsQCxQPoC/u1QUsShIqJKWtOjb5cXaBaprI/02WC79DDRODplJOye1kqsh7AsFHIB1cbm9+OA==",
-      "path": "skiasharp.skottie/2.88.1",
-      "hashPath": "skiasharp.skottie.2.88.1.nupkg.sha512"
-    },
-    "SkiaSharp.Views.Desktop.Common/2.88.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kVynintQ4hEe5YejTEwaeFh286XDSl9fqSK3hxC4Wia1eUNQjsAJYvAvjictVOjYu3yWmRtb7uuzUNjuChz9Mw==",
-      "path": "skiasharp.views.desktop.common/2.88.1",
-      "hashPath": "skiasharp.views.desktop.common.2.88.1.nupkg.sha512"
-    },
-    "SkiaSharp.Views.WPF/2.88.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ERHPChykBW8ZInivxaKTePnokB61PjUM0qBZy74WBCi7n/5rO/WZR61iv4vC50muotDvnMvciWhKF/cuRtmJqg==",
-      "path": "skiasharp.views.wpf/2.88.1",
-      "hashPath": "skiasharp.views.wpf.2.88.1.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

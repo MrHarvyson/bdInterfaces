@@ -46,16 +46,4 @@ C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\Pages\Consultas.g.cs
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\Pages\AcercaDe.baml
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\Pages\Consultas.baml
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\LottieSharp.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\SkiaSharp.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\SkiaSharp.SceneGraph.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\SkiaSharp.Skottie.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\SkiaSharp.Views.WPF.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
-C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\bdInterfaces_Content.g.cs
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\RESOURCES\Recursos.baml

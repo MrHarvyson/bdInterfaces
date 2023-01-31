@@ -44,10 +44,6 @@
               "target": "Package",
               "version": "[6.2.1, )"
             },
-            "LottieSharp": {
-              "target": "Package",
-              "version": "[2.1.0, )"
-            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.32, )"
