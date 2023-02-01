@@ -6,21 +6,24 @@ namespace bdInterfaces.Pages;
 
 public partial class Consultas : Page
 {
-    static MySqlConnection conexion = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=pocholo001;database=bdinterfaces");
+    static MySqlConnection conexion =
+        new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=pocholo001;database=bdinterfaces");
 
     public Consultas()
     {
         InitializeComponent();
+        // iniciamos las 3 listas
         mostrarLista1();
         mostrarLista2();
         mostrarLista3();
     }
-    
-    private void mostrarLista1(){
-      
-        string masVendidos  = "SELECT CONCAT(ProductName) AS INFO FROM products, categories WHERE products.CategoryID = categories.CategoryID ORDER BY UnitsOnOrder DESC LIMIT 5;";
-        MySqlDataAdapter adaptador = new MySqlDataAdapter(masVendidos , conexion);
-        
+
+    private void mostrarLista1()
+    {
+        string masVendidos =
+            "SELECT CONCAT(ProductName) AS INFO FROM products, categories WHERE products.CategoryID = categories.CategoryID ORDER BY UnitsOnOrder DESC LIMIT 5;";
+        MySqlDataAdapter adaptador = new MySqlDataAdapter(masVendidos, conexion);
+
         using (adaptador)
         {
             DataTable tabla = new DataTable();
@@ -33,10 +36,11 @@ public partial class Consultas : Page
 
     private void mostrarLista2()
     {
-        string noStock = "SELECT CONCAT(ProductName) AS INFO FROM products, categories WHERE products.CategoryID = categories.CategoryID AND UnitsInStock = 0;";
+        string noStock =
+            "SELECT CONCAT(ProductName) AS INFO FROM products, categories WHERE products.CategoryID = categories.CategoryID AND UnitsInStock = 0;";
         MySqlDataAdapter adaptador = new MySqlDataAdapter(noStock, conexion);
 
-        
+
         using (adaptador)
         {
             DataTable tabla = new DataTable();
@@ -46,12 +50,13 @@ public partial class Consultas : Page
             lista2.ItemsSource = tabla.DefaultView;
         }
     }
-    
+
     private void mostrarLista3()
     {
-        string masCaros = "SELECT CONCAT(ProductName) AS INFO FROM products, categories WHERE products.CategoryID = categories.CategoryID ORDER BY UnitPrice DESC LIMIT 5";       
+        string masCaros =
+            "SELECT CONCAT(ProductName) AS INFO FROM products, categories WHERE products.CategoryID = categories.CategoryID ORDER BY UnitPrice DESC LIMIT 5";
         MySqlDataAdapter adaptador = new MySqlDataAdapter(masCaros, conexion);
-        
+
         using (adaptador)
         {
             DataTable tabla = new DataTable();

@@ -35,13 +35,14 @@ public partial class LoginView : Window
             MainView main = new MainView();
             this.Close();
             main.Show();
+            
         }
         else
         {
             TxtPass.Password = "";
             MessageBox.Show("Usuario y/o contraseña no válidos");
         }
-        
+        Db.cerrarConexion();
     }
     
 }
