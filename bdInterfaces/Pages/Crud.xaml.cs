@@ -102,7 +102,7 @@ public partial class Crud : Page
         AgregarRbt.Visibility = Visibility.Visible;
         ModificarRbt.Visibility = Visibility.Hidden;
         BorrarRbt.Visibility = Visibility.Hidden;
-        
+
     }
 
     private void RbtModificar_OnClick(object sender, RoutedEventArgs e)
@@ -136,10 +136,20 @@ public partial class Crud : Page
 
     private void BtnAgregarPro_OnClick(object sender, RoutedEventArgs e)
     {
-        Db.insertar(TxtProducto.Text,CbCategoriaAgregar.SelectedValue.ToString());
-        Db.cerrarConexion();
-        mostrarLista1();
-        mostrarLista2();
+        if (TxtProducto.Text.Equals("") || CbCategoriaAgregar.SelectedItem==null)
+        {
+            MessageBox.Show("RELLENAR CAMPOS");
+        }
+        else
+        {
+            Db.insertar(TxtProducto.Text,CbCategoriaAgregar.SelectedValue.ToString());
+            TxtProducto.Text = "";
+            CbCategoriaAgregar.SelectedItem = null;
+            Db.cerrarConexion();
+            mostrarLista1();
+            mostrarLista2();
+        }
+        
     }
 
 
@@ -154,6 +164,7 @@ public partial class Crud : Page
     private void BtnBorrar_OnClick(object sender, RoutedEventArgs e)
     {
         Db.borrar(TxtProductoBorrar.Text);
+        TxtProductoBorrar.Text = "";
         Db.cerrarConexion();
         mostrarLista1();
         mostrarLista2();

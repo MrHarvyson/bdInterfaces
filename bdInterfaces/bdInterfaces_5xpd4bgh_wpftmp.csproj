@@ -15,17 +15,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
-    <PackageReference Include="LottieSharp" Version="2.1.0" />
     <PackageReference Include="MySql.Data" Version="8.0.32" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="Imagenes\musica.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="Imagenes\bd.png" />
-    <None Remove="Raw\ejemplo.json" />
-    <None Remove="Raw\otro.json" />
-    <None Remove="Raw\pru.json" />
   </ItemGroup>
   <ItemGroup>
     <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.5\ref\net6.0\Accessibility.dll" />
@@ -35,7 +25,6 @@
     <ReferencePath Include="C:\Users\josec\.nuget\packages\k4os.compression.lz4\1.2.6\lib\netstandard2.0\K4os.Compression.LZ4.dll" />
     <ReferencePath Include="C:\Users\josec\.nuget\packages\k4os.compression.lz4.streams\1.2.6\lib\netstandard2.1\K4os.Compression.LZ4.Streams.dll" />
     <ReferencePath Include="C:\Users\josec\.nuget\packages\k4os.hash.xxhash\1.0.6\lib\netstandard2.0\K4os.Hash.xxHash.dll" />
-    <ReferencePath Include="C:\Users\josec\.nuget\packages\lottiesharp\2.1.0\lib\net6.0-windows7.0\LottieSharp.dll" />
     <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.5\ref\net6.0\Microsoft.CSharp.dll" />
     <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.5\ref\net6.0\Microsoft.VisualBasic.Core.dll" />
     <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.5\ref\net6.0\Microsoft.VisualBasic.dll" />

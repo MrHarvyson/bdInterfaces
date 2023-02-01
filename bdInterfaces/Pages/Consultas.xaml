@@ -9,16 +9,32 @@
       mc:Ignorable="d"
       Background="{StaticResource Negro}"
       Title="Consultas" Height="450" Width="600">
-    <StackPanel Orientation="Horizontal"
+    
+    <StackPanel Margin="20">
+        <StackPanel>
+            <Image Source="../IMG/top.png"
+                   Width="100">
+                
+                <Image.Effect>
+                    <DropShadowEffect
+                        ShadowDepth="0"
+                        Direction="330"
+                        Color="#ffe705"
+                        Opacity="0.5"
+                        BlurRadius="25"/>
+                </Image.Effect>
+            </Image>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="0,50,0,0">
         
-        <StackPanel Margin="10"
-                    VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center">
             <TextBlock HorizontalAlignment="Center"
                        Margin="0,0,0,20"
-                       Foreground="LightGray"
+                       Foreground="{StaticResource AmarilloOscuro}"
+                       FontSize="15"
                        FontFamily="Montserrat"
                        FontWeight="Bold">MÁS VENDIDOS</TextBlock>
             <ListBox x:Name="lista1"
@@ -29,11 +45,11 @@
                      BorderBrush="{StaticResource Verde}">
             </ListBox>
         </StackPanel>
-        <StackPanel Margin="10"
-                    VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center">
             <TextBlock HorizontalAlignment="Center"
                        Margin="0,0,0,20"
-                       Foreground="LightGray"
+                       FontSize="15"
+                       Foreground="{StaticResource AmarilloOscuro}"
                        FontFamily="Montserrat"
                        FontWeight="Bold">SIN STOCK</TextBlock>
             <ListBox x:Name="lista2"
@@ -44,11 +60,11 @@
                      BorderBrush="{StaticResource Verde}">
             </ListBox>
         </StackPanel>
-        <StackPanel Margin="10"
-                    VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center">
             <TextBlock HorizontalAlignment="Center"
                        Margin="0,0,0,20"
-                       Foreground="LightGray"
+                       Foreground="{StaticResource AmarilloOscuro}"
+                       FontSize="15"
                        FontFamily="Montserrat"
                        FontWeight="Bold">MÁS CAROS</TextBlock>
             <ListBox x:Name="lista3"
@@ -61,4 +77,7 @@
         </StackPanel>
         
     </StackPanel>
+    </StackPanel>
+    
+    
 </Page>

@@ -66,20 +66,35 @@
                             VerticalAlignment="Bottom">
                     <TextBlock Text="NORTHWIND"
                                FontFamily="Montserrat"
+                               VerticalAlignment="Bottom"
                                FontSize="70"
                                FontWeight="Bold"
-                               Foreground="{StaticResource Verde}" />
-                    <Image Source="../Imagenes/bd.png"
-                           Width="50"
+                               Foreground="{StaticResource Verde}" >
+                        <TextBlock.Effect>
+                            <DropShadowEffect ShadowDepth="0"
+                                              Color="#28C67F"
+                                              Opacity="1"
+                                              BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                    <Image Source="../IMG/bd.png"
+                           Width="75"
                            VerticalAlignment="Bottom"
-                           Margin="20 0 0 20" />
+                           Margin="20 0 0 20" >
+                        <Image.Effect>
+                            <DropShadowEffect ShadowDepth="0"
+                                              Color="White"
+                                              Opacity="1"
+                                              BlurRadius="10"/>
+                        </Image.Effect>
+                    </Image>
                 </StackPanel>
 
                 <TextBlock Text="Usuario"
                            Foreground="{StaticResource Verde}"
                            FontFamily="Montserrat"
                            FontWeight="Bold"
-                           FontSize="13"
+                           FontSize="15"
                            Margin="0 50 0 0 "
                            Width="200" />
 
@@ -97,7 +112,7 @@
                            Foreground="{StaticResource Verde}"
                            FontFamily="Montserrat"
                            FontWeight="Bold"
-                           FontSize="13"
+                           FontSize="15"
                            Margin="0 25 0 0 "
                            Width="200" />
 
@@ -129,7 +144,7 @@
                            VerticalAlignment="Center"
                            TextAlignment="Center"
                            FontSize="10"
-                           Margin="0 40 0 0 "
+                           Margin="0 30 0 0 "
                            Width="200" />
                 
                 

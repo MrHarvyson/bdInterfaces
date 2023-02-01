@@ -22,10 +22,8 @@ public class Db
         Boolean existe = false;
         
         conexion.Open();
-        string consultaUser = "SELECT * FROM users WHERE User = @vusuario";
+        string consultaUser = "SELECT * FROM users WHERE User = '" + usuario + "' and Password = '" + contrasena + "'";
         MySqlCommand cmd = new MySqlCommand(consultaUser, conexion);
-        cmd.Parameters.AddWithValue("@vusuario", usuario);
-        cmd.Parameters.AddWithValue("@contrasenia", contrasena);
 
         MySqlDataReader lector = cmd.ExecuteReader();
         
@@ -47,14 +45,23 @@ public class Db
     }
     
     // insertar producto
-    public static void insertar(String txtProducto, String txtCategoria) {
-        int id = obtenerCategoria(txtCategoria);
-        String consulta = "INSERT INTO products (ProductName, CategoryID) VALUES ('" + txtProducto + "','" +
-                          id + "')";
-        MySqlCommand cmd = new MySqlCommand(consulta, conexion);
-        conexion.Open();
-        cmd.ExecuteNonQuery();
-        conexion.Close();
+    public static void insertar(String txtProducto, String txtCategoria)
+    {
+        if (!existe(txtProducto))
+        {
+            int id = obtenerCategoria(txtCategoria);
+            String consulta = "INSERT INTO products (ProductName, CategoryID) VALUES ('" + txtProducto + "','" + id + "')";
+            MySqlCommand cmd = new MySqlCommand(consulta, conexion);
+            conexion.Open();
+            cmd.ExecuteNonQuery();
+            conexion.Close();
+        }
+        else
+        {
+            MessageBox.Show("PRODUCTO EXISTE");
+        }
+        
+        
     }
 
     // obtener nombre categoria del id
@@ -83,12 +90,37 @@ public class Db
 
     public static void modificar(String productoNuevo, String productoAntiguo, String categoriaName)
     {
-        string consulta = "UPDATE products SET ProductName = '" + productoNuevo + "', CategoryID = '" + obtenerCategoria(categoriaName) + "' WHERE ProductName = '" + productoAntiguo + "'";
-        MySqlCommand cmd = new MySqlCommand(consulta, conexion);
-        conexion.Open();
-        cmd.ExecuteNonQuery();
+        if (!existe(productoNuevo))
+        {
+            string consulta = "UPDATE products SET ProductName = '" + productoNuevo + "', CategoryID = '" + obtenerCategoria(categoriaName) + "' WHERE ProductName = '" + productoAntiguo + "'";
+            MySqlCommand cmd = new MySqlCommand(consulta, conexion);
+            conexion.Open();
+            cmd.ExecuteNonQuery();
+        }
+        else
+        {
+            MessageBox.Show("PRODUCTO EXISTE");
+        }
+        
     }
-    
+
+    public static Boolean existe(String producto)
+    {
+        Boolean existe = false;
+        conexion.Open();
+        String consulta = "SELECT ProductName FROM products WHERE ProductName ='" + producto +"'";
+
+        MySqlCommand cmd = new MySqlCommand(consulta, conexion);
+
+        MySqlDataReader lector = cmd.ExecuteReader();
+        
+        if (lector.Read())
+        {
+            existe = true;
+        }
+        conexion.Close();
+        return existe;
+    }
     
     
     

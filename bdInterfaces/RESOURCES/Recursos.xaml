@@ -9,6 +9,9 @@
     <Brush x:Key="Negro">#333333</Brush>
     <Brush x:Key="Gris">#525252</Brush>
     <Brush x:Key="Azul">#278bef</Brush>
+    <Brush x:Key="AmarilloClaro">#ffe705</Brush>
+    <Brush x:Key="AmarilloOscuro">#ffcb00</Brush>
+    
 
 
     <!-- COLOR BOTONES -->

@@ -5,6 +5,9 @@
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
+        <ApplicationIcon>IMG\icon.ico</ApplicationIcon>
+        <AssemblyName>NORTHWIND</AssemblyName>
+        <RootNamespace>NORTHWIND</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,20 +15,13 @@
         <PackageReference Include="MySql.Data" Version="8.0.32" />
     </ItemGroup>
 
-    <ItemGroup>
-      <None Remove="Imagenes\musica.png" />
-    </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Imagenes\bd.png" />
       <Resource Include="IMG\bd.png" />
-      <None Remove="Raw\ejemplo.json" />
-      <None Remove="Raw\otro.json" />
-      <None Remove="Raw\pru.json" />
-      <None Remove="Imagenes\crud.png" />
       <Resource Include="IMG\crud.png" />
-      <None Remove="Imagenes\acercade.png" />
       <Resource Include="IMG\acercade.png" />
+      <None Remove="IMG\top.png" />
+      <Resource Include="IMG\top.png" />
     </ItemGroup>
 
 </Project>

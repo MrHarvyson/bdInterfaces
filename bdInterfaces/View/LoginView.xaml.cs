@@ -1,6 +1,8 @@
 ﻿
 using System.Windows;
 using System.Windows.Input;
+using bdInterfaces.DB;
+
 namespace bdInterfaces.View;
 
 public partial class LoginView : Window
@@ -27,11 +29,8 @@ public partial class LoginView : Window
 
     private void BtnLogin_OnClick(object sender, RoutedEventArgs e)
     {
-        MainView main = new MainView();
-        this.Close();
-        main.Show();
-        /*
-        if (Db.login(TxtUser.Text, TxtPass.ToString()))
+        
+        if (Db.login(TxtUser.Text, TxtPass.Password))
         {
             MainView main = new MainView();
             this.Close();
@@ -39,9 +38,10 @@ public partial class LoginView : Window
         }
         else
         {
+            TxtPass.Password = "";
             MessageBox.Show("Usuario y/o contraseña no válidos");
         }
-        */
+        
     }
     
 }

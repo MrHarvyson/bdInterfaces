@@ -8,6 +8,7 @@
         mc:Ignorable="d"
         Title="MainView" Height="450" Width="800"
         WindowStyle="None"
+        Icon="../IMG/bd.png"
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         ResizeMode="NoResize"
@@ -32,6 +33,7 @@
                         CornerRadius="20,0,0,20"
                         Background="{StaticResource Verde}">
                     <Grid>
+                        
                         <Grid.RowDefinitions>
                             <RowDefinition Height="400"/>
                             <RowDefinition Height="*"/>
@@ -44,10 +46,6 @@
                             <StackPanel Orientation="Horizontal"
                                         Height="35"
                                         Margin="10, 25, 0, 40">
-                                <Image Source="../Imagenes/bd.png"
-                                       VerticalAlignment="Bottom"
-                                       Margin="0,0,0,5">
-                                </Image>
                                 <TextBlock Text="NORTHWIND"
                                            Foreground="{StaticResource Negro}"
                                            FontSize="23"
@@ -55,7 +53,24 @@
                                            FontFamily="MontSerrat"
                                            VerticalAlignment="Bottom"
                                            Padding="0,0,0,0">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect ShadowDepth="0"
+                                                          Color="#333333"
+                                                          Opacity="0.5"
+                                                          BlurRadius="10"/>
+                                    </TextBlock.Effect>
                                 </TextBlock>
+                                <Image Source="../IMG/bd.png"
+                                       VerticalAlignment="Bottom"
+                                       Margin="10,0,0,5">
+                                    <Image.Effect>
+                                        <DropShadowEffect ShadowDepth="0"
+                                                          Color="White"
+                                                          Opacity="0.5"
+                                                          BlurRadius="10"/>
+                                    </Image.Effect>
+                                </Image>
+                                
                             </StackPanel>
 
                             <!-- Menu Botones -->
@@ -69,6 +84,7 @@
                                     <fo:IconImage Icon="Home" Style="{StaticResource MenuBotonIcono}" />
                                     <TextBlock Text="INICIO" Style="{StaticResource MenuBotonText}"></TextBlock>
                                 </StackPanel>
+                                
                             </RadioButton>
 
                             <RadioButton x:Name="RbtCrud" 

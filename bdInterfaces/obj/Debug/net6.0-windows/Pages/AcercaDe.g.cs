@@ -54,7 +54,7 @@ namespace bdInterfaces.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/bdInterfaces;component/pages/acercade.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/NORTHWIND;component/pages/acercade.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\AcercaDe.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
