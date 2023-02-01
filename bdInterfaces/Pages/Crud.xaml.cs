@@ -155,10 +155,31 @@ public partial class Crud : Page
 
     private void BtnModificar_OnClick(object sender, RoutedEventArgs e)
     {
-        Db.modificar(TxtProductoNuevo.Text,TxtProductoAntiguo.Text,CbCategoriaModificar.SelectedValue.ToString());
-        Db.cerrarConexion();
-        mostrarLista1();
-        mostrarLista2();
+        if (TxtProductoNuevo.Text.Equals("") || TxtProductoAntiguo.Text.Equals("") || CbCategoriaModificar.SelectedItem == null)
+        {
+            MessageBox.Show("RELLENAR CAMPOS");
+        }
+        else
+        {
+            if(!Db.existe(TxtProductoNuevo.Text) && Db.existe(TxtProductoAntiguo.Text))
+            {
+                Db.modificar(TxtProductoNuevo.Text, TxtProductoAntiguo.Text,
+                    CbCategoriaModificar.SelectedValue.ToString());
+                Db.cerrarConexion();
+                mostrarLista1();
+                mostrarLista2();
+            }
+            else if(Db.existe(TxtProductoNuevo.Text))
+            {
+                MessageBox.Show("NOMBRE PRODUCTO NUEVO EXISTE");
+                TxtProductoNuevo.Text = "";
+            }
+            else if(!Db.existe(TxtProductoAntiguo.Text))
+            {
+                MessageBox.Show("PRODUCTO ANTIGUO NO EXISTE");
+                TxtProductoAntiguo.Text = "";
+            }
+        }
     }
 
     private void BtnBorrar_OnClick(object sender, RoutedEventArgs e)
